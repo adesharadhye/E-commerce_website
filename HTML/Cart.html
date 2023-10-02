@@ -1,0 +1,456 @@
+<html>
+<head>
+<title>Cart</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+<style>
+
+body
+{
+font-family: 'Kanit', sans-serif;
+margin:0px;
+padding:0px;
+background:url('../img/payment.jpg');
+background-filter:invert(30%);
+height:100vh;
+background-size:cover;
+}
+
+.left
+{
+border:0px solid black;
+display:inline-block;
+position:fixed;
+left:40px;
+top:25px;
+}
+
+.right
+{
+border:0px solid black;
+display:inline-block;
+position:fixed;
+right:40px;
+top:25px;
+}
+
+.navbar li
+{
+display:inline-block;
+font-size:25px;
+}
+
+.navbar li a
+{
+text-decoration:none;
+color:black;
+padding:10px 18px;
+color:#be1f53;
+}
+
+.navbar li a:hover, .navbar li a.active
+{
+text-decoration:underline;
+color:#e02864;
+}
+
+.navbar img
+{
+filter:invert(15%);
+}
+
+.navbar img:hover
+{
+filter:invert(5%);
+}
+
+
+.con
+{
+border:0px solid red;
+margin:150px auto;
+padding:0px;
+display:block;
+position:absolute;
+top:850px;
+width:100%;
+}
+
+.container3
+{
+border:2px solid black;
+margin:2px auto;
+height:7%;
+display:block;
+background-color:black;
+opacity:90%;
+color:mintcream;
+}
+
+.container3 h3
+{
+margin:0px;
+padding:7px 40px;
+font-size:25px;
+}
+
+.container3 h3 ul li
+{
+line-height:30px;
+}
+
+ul li
+{
+display:none;
+list-style:none;
+line-height:50px;
+color:black;
+font-size:16px;
+font-family:arial;
+}
+
+ul li a
+{
+text-decoration:none;
+color:#9c1f06;
+}
+
+ul li a:hover
+{
+color:#c42b0c;
+}
+
+.container3 h3:hover ul li
+{
+display:block;
+}
+
+.container4
+{
+text-align:center;
+color:#06065f;
+border:0px solid black;
+position:absolute;
+top:1400px;
+width:100%;
+font-size:30px;
+background-color:#b8b8bc;
+opacity:85%;
+}
+
+.btn
+{
+margin:0px 5px;
+padding:4px 14px;
+border:none;
+background-color:#b8b8bc;
+}
+
+.btn img
+{
+width:50px;
+filter:invert(0%);
+}
+
+.btn img:hover
+{
+opacity:90%;
+}
+
+.heading
+{
+position:absolute;
+top:15%;
+left:41%;
+font-size:20px;
+font-family:georgia;
+text-decoration:underline;
+color:#0b065c;
+}
+
+.cart
+{
+margin:200px auto;
+background-color:#f9e7ec;
+opacity:80%;
+width:90%;
+}
+
+.cart-info
+{
+display:flex;
+}
+
+th
+{
+text-align:left;
+padding:10px;
+font-size:20px;
+color:#fff;
+background-color:#ed0748;
+}
+
+td
+{
+padding:10px 5px;
+}
+
+td input
+{
+width:40px;
+height:30px;
+padding:5px;
+font-weight:bold;
+}
+
+td p
+{
+font-size:18px;
+font-weight:bold;
+padding:0px 10px;
+}
+
+td small
+{
+font-size:15px;
+font-weight:bold;
+padding:0px 10px;
+}
+
+td a
+{
+text-decoration:none;
+color:#bc0a3d;
+font-size:13px;
+font-weight:bold;
+padding:0px 10px;
+}
+
+td a:hover
+{
+color:#0b065c;
+}
+
+.total
+{
+display:flex;
+justify-content:flex-end;
+}
+
+.total table
+{
+border-top:3px solid #bc0a3d;
+font-size:20px;
+font-weight:bold;
+margin-bottom:50px;
+}
+
+td:last-child
+{
+text-align:right;
+font-weight:bold;
+}
+
+th:last-child
+{
+text-align:right;
+}
+
+.proceed td
+{
+width:100%;
+text-align:center;
+border:3px groove white;
+}
+
+.proceed td a
+{
+color:#0b065c;
+font-size:25px;
+}
+
+.proceed td a:hover
+{
+color:#2c17ad;
+text-decoration:underline;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+
+<div class="left">
+<a href="../index.html"><img src="../img/logo1.png" width="150px" height="100px"></a>
+</div>
+
+<div class="right">
+<ul class="navbar">
+<li><a href="../index.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="about us.html">About</a></li>
+<li><a href="contact us.html">Contact</a></li>
+<li><a href="account.html">Account</a></li>
+<li><a href="wishlist.html"><img src="../img/www.png" width="30px" height="30px"></a></li>
+<li><a href="cart.html" class="active"><img src="../img/cart.png" width="30px" height="30px"></a></li>
+</ul>
+</div>
+
+
+
+<div class="con">
+<div class="container3">
+<h3>About
+<ul>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="about us.html">Our Story</a></li>
+<li><a href="about us.html">Our Mission</a></li>
+<li><a href="about us.html">Our Service</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Help
+<ul>
+<li><a href="policy.html">+91 986 113 0384</a></li>
+<li><a href="policy.html">+91 637 035 7487</a></li>
+<li><a href="policy.html">+91 637 056 1657</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Policy
+<ul>
+<li><a href="policy.html">Privacy Policy</a></li>
+<li><a href="policy.html">Return Policy</a></li>
+<li><a href="policy.html">Terms of Use</a></li>
+<li><a href="policy.html">Security</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Mail
+<ul>
+<li><a href="https://gmail.com">trendyplus.gmail.com</a></li>
+<li><a href="https://gmail.com">trendyfashions.google.com</a></li>
+<li><a href="https://gmail.com">trendyyplus.rediffmail.com</a></li>
+</ul>
+</h3>
+</div>
+</div>
+
+<div class="container4">
+<h1>ACTIVE IN SOCIAL MEDIA</h1>
+<button class="btn"><a href="https://twitter.com"><img src="../img/twitter.png"></a></button>
+<button class="btn"><a href="https://facebook.com"><img src="../img/facebook.png"></a></button>
+<button class="btn"><a href="https://google.com"><img src="../img/google.png"></a></button>
+<button class="btn"><a href="https://instagram.com"><img src="../img/insta.png"></a></button>
+<button class="btn"><a href="https://youtube.com"><img src="../img/you.png"></a></button>
+</div>
+</header>
+
+<div class="heading"><h1>Shopping Cart</h1></div>
+<div class="cart">
+
+<table width="100%" border="0">
+
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Subtotal</th>
+</tr>
+
+<tr>
+<td>
+<div class="cart-info">
+<img src="../img/western8.jpg" width="130px" height="130px">
+<div>
+<p>Silver Heavy Gown</p>
+<small>Price: ₹580</small><br><br>
+<a href="#">Remove</a>
+</div>
+</div>
+</td>
+
+<td><input type="number" value="1"></td>
+<td>&nbsp;₹580</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="cart-info">
+<img src="../img/t-shirt10.jpg" width="130px" height="130px">
+<div>
+<p>Denim T-shirt</p>
+<small>Price: ₹540</small><br><br>
+<a href="#">Remove</a>
+</div>
+</div>
+</td>
+
+<td>&nbsp;<input type="number" value="1"></td>
+<td>&nbsp; ₹540</td>
+</tr>
+
+<tr>
+<td>
+<div class="cart-info">
+<img src="../img/jewellery2.jpg" width="130px" height="130px">
+<div>
+<p>Golden Bracelet</p>
+<small>Price: ₹450</small><br><br>
+<a href="#">Remove</a>
+</div>
+</div>
+</td>
+
+<td><input type="number" value="1"></td>
+<td>&nbsp;₹ 450</td>
+</tr>
+
+</table>
+
+
+<div class="total">
+<table width="400px">
+
+<tr>
+<td>Subtotal</td>
+<td>₹ 1570</td>
+</tr>
+
+<tr>
+<td>Tax</td>
+<td>₹ 50</td>
+</tr>
+
+<tr>
+<td>Total</td>
+<td>₹ 1620</td>
+</tr>
+
+</table>
+</div>
+
+<div>
+<table width="100%" border="0">
+<tr class="proceed">
+<td align="center" colspan="3" bgcolor="#ed0748"><a href="payment.html">Place Order</a></tr>
+</tr>
+<table>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

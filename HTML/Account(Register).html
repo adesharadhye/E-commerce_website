@@ -1,0 +1,353 @@
+<html>
+<head>
+<title>Account(Register)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+<style>
+
+body
+{
+font-family: 'Kanit', sans-serif;
+margin:0px;
+padding:0px;
+background:url('../img/account.jpg');
+background-filter:invert(30%);
+height:100vh;
+background-size:cover;
+}
+
+.left
+{
+border:0px solid black;
+display:inline-block;
+position:fixed;
+left:40px;
+top:25px;
+}
+
+.right
+{
+border:0px solid black;
+display:inline-block;
+position:fixed;
+right:40px;
+top:25px;
+}
+
+.navbar li
+{
+display:inline-block;
+font-size:25px;
+}
+
+.navbar li a
+{
+text-decoration:none;
+color:black;
+padding:10px 18px;
+color:#be1f53;
+}
+
+.navbar li a:hover, .navbar li a.active
+{
+text-decoration:underline;
+color:#e02864;
+}
+
+.navbar img
+{
+filter:invert(15%);
+}
+
+.navbar img:hover
+{
+filter:invert(5%);
+}
+
+
+.con
+{
+border:0px solid red;
+margin:150px auto;
+padding:0px;
+display:block;
+position:absolute;
+top:620px;
+width:100%;
+}
+
+.container3
+{
+border:2px solid black;
+margin:2px auto;
+height:7%;
+display:block;
+background-color:black;
+opacity:90%;
+color:mintcream;
+}
+
+.container3 h3
+{
+margin:0px;
+padding:7px 40px;
+font-size:25px;
+}
+
+.container3 h3 ul li
+{
+line-height:30px;
+}
+
+ul li
+{
+display:none;
+list-style:none;
+line-height:50px;
+color:black;
+font-size:16px;
+font-family:arial;
+}
+
+ul li a
+{
+text-decoration:none;
+color:#9c1f06;
+}
+
+ul li a:hover
+{
+color:#c42b0c;
+}
+
+.container3 h3:hover ul li
+{
+display:block;
+}
+
+.container4
+{
+text-align:center;
+color:#06065f;
+border:0px solid black;
+position:absolute;
+top:1220px;
+width:100%;
+font-size:30px;
+background-color:#b8b8bc;
+opacity:90%;
+}
+
+.btn
+{
+margin:0px 5px;
+padding:4px 14px;
+border:none;
+background-color:#b8b8bc;
+cursor:pointer;
+}
+
+.btn img
+{
+width:50px;
+filter:invert(0%);
+}
+
+.btn img:hover
+{
+opacity:90%;
+}
+
+
+.login-box
+{
+width:320px;
+height:500px;
+color:#fff;
+position:absolute;
+left:40%;
+top:25%;
+box-sizing:border-box;
+border-radius:10px;
+opacity:90%;
+background-color:#02052f;
+}
+
+.login-box:hover
+{
+background-color:#030740;
+}
+
+.contact-left
+{
+flex-basis:50%;
+padding:10px 40px;
+}
+
+.contact-left h3
+{
+text-align:center;
+font-family:Verdana;
+font-weight:bold;
+margin-bottom:50px;
+padding:0px 0px;
+font-size:25px;
+}
+
+label
+{
+margin:0px;
+padding:0px;
+font-size:20px;
+}
+
+input
+{
+font-family:Verdana;
+border-radius:5px;
+padding-bottom:5px;
+margin-bottom:20px;
+display:flex;
+width:250px;
+justify-content:space-between;
+}
+
+.contact-left input[type="text"],[type="password"],[type="Email"]
+{
+border:none;
+border-bottom:1px solid red;
+background:transparent;
+outline:none;
+height:25px;
+color:#fff;
+font-size:13px;
+}
+
+.btn1
+{
+background-color:red;
+width:200px;
+border:none;
+height:30px;
+color:white;
+border-radius:30px;
+margin:20px 22px;
+padding:0px 0px;
+cursor:pointer;
+}
+
+.btn1:hover
+{
+background-color:#b1a0a0;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>
+
+<div class="left">
+<a href="../index.html"><img src="../img/logoo.png" width="150px" height="100px"></a>
+</div>
+
+<div class="right">
+<ul class="navbar">
+<li><a href="../index.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="about us.html">About</a></li>
+<li><a href="contact us.html">Contact</a></li>
+<li><a href="account.html" class="active">Account</a></li>
+<li><a href="wishlist.html"><img src="../img/www.png" width="30px" height="30px"></a></li>
+<li><a href="cart.html"><img src="../img/cart.png" width="30px" height="30px"></a></li>
+</ul>
+</div>
+
+
+
+<div class="con">
+<div class="container3">
+<h3>About
+<ul>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="about us.html">Our Story</a></li>
+<li><a href="about us.html">Our Mission</a></li>
+<li><a href="about us.html">Our Service</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Help
+<ul>
+<li><a href="policy.html">+91 986 113 0384</a></li>
+<li><a href="policy.html">+91 637 035 7487</a></li>
+<li><a href="policy.html">+91 637 056 1657</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Policy
+<ul>
+<li><a href="policy.html">Privacy Policy</a></li>
+<li><a href="policy.html">Return Policy</a></li>
+<li><a href="policy.html">Terms of Use</a></li>
+<li><a href="policy.html">Security</a></li>
+</ul>
+</h3>
+</div>
+
+<div class="container3">
+<h3>Mail
+<ul>
+<li><a href="https://gmail.com">trendyplus.gmail.com</a></li>
+<li><a href="https://gmail.com">trendyfashions.google.com</a></li>
+<li><a href="https://gmail.com">trendyyplus.rediffmail.com</a></li>
+</ul>
+</h3>
+</div>
+</div>
+
+<div class="container4">
+<h1>ACTIVE IN SOCIAL MEDIA</h1>
+<button class="btn"><a href="https://twitter.com"><img src="../img/twitter.png"></a></button>
+<button class="btn"><a href="https://facebook.com"><img src="../img/facebook.png"></a></button>
+<button class="btn"><a href="https://google.com"><img src="../img/google.png"></a></button>
+<button class="btn"><a href="https://instagram.com"><img src="../img/insta.png"></a></button>
+<button class="btn"><a href="https://youtube.com"><img src="../img/you.png"></a></button>
+</div>
+</header>
+
+
+<div class="login-box">
+
+<div class="contact-left">
+<h3>Register</h3>
+
+<form>
+<label>Username</label>
+<input type="text" placeholder="Username">
+
+<br>
+
+<label>Email</label>
+<input type="Email" placeholder="Enter Email">
+
+<br>
+
+<label>Password</label>
+<input type="password" placeholder=" Enter Password">
+
+<button type="submit" class="btn1">Register</button>
+
+</form>
+</div>
+
+</div>
+</body>
+</html>
